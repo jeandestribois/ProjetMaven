@@ -6,6 +6,11 @@ package fr.uvsq.jeandestribois.compte;
  */
 public class App 
 {
+	 /**
+     * Create the test case
+     *
+     * @param args
+     */
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );

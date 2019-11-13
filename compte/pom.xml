@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -29,15 +31,31 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.1.1</version>
+        <version>3.1.1</version>	
         <configuration>
-          <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
-          <show>private</show>
-          <nohelp>true</nohelp>
+            <doclint>none</doclint>
+      		<failOnError>false</failOnError>
+            <javadocExecutable>C:\Program Files\Java\jdk1.8.0_151\bin\javadoc</javadocExecutable>
         </configuration>
-      </plugin>
-    </plugins>
+      </plugin>    
+     </plugins>
   </build>
   
+   <reporting>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-checkstyle-plugin</artifactId>
+          <version>3.1.0</version>
+          <reportSets>
+            <reportSet>
+              <reports>
+                <report>checkstyle</report>
+              </reports>
+            </reportSet>
+          </reportSets>
+        </plugin>
+      </plugins>
+    </reporting>  
   
 </project>
