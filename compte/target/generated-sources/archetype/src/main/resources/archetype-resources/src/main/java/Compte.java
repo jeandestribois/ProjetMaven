@@ -1,11 +1,8 @@
-package fr.uvsq.jeandestribois.compte;
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${package};
 
-/**
- * 
- * @author Jean/Raphaël
- *
- * Une classe permettant de gérer très brievement des compte.
- */
 
 public class Compte {
 	private int solde;

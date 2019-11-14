@@ -1,10 +1,13 @@
-package fr.uvsq.jeandestribois.compte;
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${package}.${artifactId};
 
 /**
  * 
  * @author Jean/Raphaël
  *
- * Une classe permettant de gérer très brievement des compte.
+ * Une classe permettant de gérer très brievement des ${artifactId}.
  */
 
 public class Compte {
